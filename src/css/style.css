@@ -10,19 +10,27 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;    
-    background: url(../images/bg-pattern-bottom.svg) no-repeat bottom right;
-    background-size: 700px 700px;
-    background: url(../images/bg-pattern-top.svg) no-repeat top left -200px ;
-    /* background-size: 900px 900px; */
+    height: 100vh;   
+    position: relative;
+    overflow: hidden;
+}
+.circulo-alto{
+    position: absolute;
+    left: -288px;
+    top: -504px;
 }
 
+.circulo-baixo{
+    position: absolute;
+    right: -235px;
+    bottom: -630px;
+}
 .card{
     height: 350px;
     width: 340px;
     background-color: #fff;
     border-radius: 20px;
-    
+    z-index: 3;
 }
 
 .perfil{
